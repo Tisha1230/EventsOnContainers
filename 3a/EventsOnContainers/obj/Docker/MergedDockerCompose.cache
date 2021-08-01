@@ -1,0 +1,36 @@
+networks:
+  backend: {}
+  frontend: {}
+services:
+  eventcatalog:
+    build:
+      context: C:\Users\tisha\Desktop\Bootcamp\Assignment 3\3a\EventsOnContainers\EventCatalogAPI
+      dockerfile: Dockerfile
+    container_name: eventscatalogapi
+    depends_on:
+      mssqlserver:
+        condition: service_started
+    environment:
+      DatabaseName: EventsDb
+      DatabasePassword: EventApi(!)
+      DatabaseServer: mssqlserver
+      DatabaseUser: sa
+    image: events/eventcatalogapi
+    networks:
+      backend: null
+      frontend: null
+    ports:
+    - published: 7005
+      target: 80
+  mssqlserver:
+    container_name: eventbritesqlserver
+    environment:
+      ACCEPT_EULA: "Y"
+      SA_PASSWORD: EventApi(!)
+    image: mcr.microsoft.com/mssql/server:latest
+    networks:
+      backend: null
+    ports:
+    - published: 1450
+      target: 1433
+version: '3.4'

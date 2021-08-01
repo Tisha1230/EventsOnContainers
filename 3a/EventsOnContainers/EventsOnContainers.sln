@@ -1,0 +1,42 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31205.134
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{89B1AB1F-9354-4B60-9C42-C2C5458671B2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "services", "services", "{86D00CF1-55A4-4141-9E64-8AE92AE04C85}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "web", "web", "{5E6F5207-EB93-4A46-898A-13A9E8B97E63}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EventCatalogAPI", "EventCatalogAPI\EventCatalogAPI.csproj", "{C2889F7E-D6F2-4D52-8CDF-70DFD88D913E}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{87CC66D1-DB32-4C42-AC35-81D0901FEE76}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C2889F7E-D6F2-4D52-8CDF-70DFD88D913E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2889F7E-D6F2-4D52-8CDF-70DFD88D913E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2889F7E-D6F2-4D52-8CDF-70DFD88D913E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2889F7E-D6F2-4D52-8CDF-70DFD88D913E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{87CC66D1-DB32-4C42-AC35-81D0901FEE76}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{87CC66D1-DB32-4C42-AC35-81D0901FEE76}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{87CC66D1-DB32-4C42-AC35-81D0901FEE76}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{87CC66D1-DB32-4C42-AC35-81D0901FEE76}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{86D00CF1-55A4-4141-9E64-8AE92AE04C85} = {89B1AB1F-9354-4B60-9C42-C2C5458671B2}
+		{5E6F5207-EB93-4A46-898A-13A9E8B97E63} = {89B1AB1F-9354-4B60-9C42-C2C5458671B2}
+		{C2889F7E-D6F2-4D52-8CDF-70DFD88D913E} = {86D00CF1-55A4-4141-9E64-8AE92AE04C85}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {31AE0819-300C-4AA2-8D39-BE0660297318}
+	EndGlobalSection
+EndGlobal
