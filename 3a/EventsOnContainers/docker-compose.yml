@@ -16,6 +16,7 @@ services:
       DatabaseName: EventsDb
       DatabaseUser: sa
       DatabasePassword: EventApi(!)
+      ExternalCatalogUrl: http://localhost:7005
 
 
     ports:

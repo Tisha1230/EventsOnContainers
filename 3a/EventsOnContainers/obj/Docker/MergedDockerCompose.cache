@@ -15,6 +15,7 @@ services:
       DatabasePassword: EventApi(!)
       DatabaseServer: mssqlserver
       DatabaseUser: sa
+      ExternalCatalogUrl: http://localhost:7005
     image: events/eventcatalogapi
     networks:
       backend: null
