@@ -55,6 +55,7 @@ namespace EventCatalogAPI.Data
 
             modelBuilder.Entity<EachEventTypes>()
                 .HasKey(et => new { et.EventId, et.TypeId });
+
             //modelBuilder.Entity<EachEventTypes>()
             //    .HasOne(et => et.Event)
             //    .WithMany(v => v.EachEventTypes)

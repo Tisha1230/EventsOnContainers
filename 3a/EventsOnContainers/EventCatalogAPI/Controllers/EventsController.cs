@@ -31,5 +31,29 @@ namespace EventCatalogAPI.Controllers
             var items = await this._context.eachEventTypes.Where(x => x.TypeId == typeId).ToListAsync();
             return Ok(items);
         }
+
+        [HttpGet("[action]")]
+        public async Task<IActionResult> GetByLocation(
+          [FromQuery] int locationId = 0)
+        {
+            var items = await this._context.Events.Where(x => x.LocationId == locationId).ToListAsync();
+            return Ok(items);
+        }
+
+        [HttpGet("[action]")]
+        public async Task<IActionResult> GetByPopularity(
+           [FromQuery] int likes = 0)
+        {
+            var items = await this._context.Events.Where(x => x.Likes == likes).ToListAsync();
+            return Ok(items);
+        }
+
+        [HttpGet("[action]")]
+        public async Task<IActionResult> GetByZipCode(
+           [FromQuery] string zipcode = "0")
+        {
+            var items = await this._context.Events.Where(x => x.ZipCode == zipcode).ToListAsync();
+            return Ok(items);
+        }
     }
 }
